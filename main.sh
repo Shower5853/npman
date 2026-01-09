@@ -21,7 +21,7 @@ if [ "$1" = "install" ]; then
 		echo
 
 		if [[ $REPLY =~ ^[Yy]$ ]]; then
-			wget -O /tmp/install_package_npm.sh ${REPO_URL}/${PACKAGE}/install.sh
+			wget -q --show-progress -O /tmp/install_package_npm.sh ${REPO_URL}/${PACKAGE}/install.sh
 			chmod +x /tmp/install_package_npm.sh
 			/tmp/install_package_npm.sh
 			rm -rf /tmp/install_package_npm.sh
