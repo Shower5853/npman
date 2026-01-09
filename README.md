@@ -1,5 +1,5 @@
 # npman
-NicePakageManager is nice pakage manager
+NicePackageManager is nice package manager
 
 # Installation
 ```
